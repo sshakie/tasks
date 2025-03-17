@@ -4,6 +4,7 @@ from data.users import User
 from data.jobs import Jobs
 from blanks.loginform import LoginForm
 from blanks.registerform import RegisterForm
+from blanks.jobform import JobForm
 from data.db_session import *
 
 app = Flask(__name__)
@@ -87,6 +88,29 @@ def register():
             return redirect('/')
     return render_template('register.html', title='Регистрация', form=form)
 
+
+@app.route('/add_job', methods=['GET', 'POST'])
+def add_job():
+    if current_user.is_authenticated:
+        form = JobForm()
+        if form.validate_on_submit():
+            db_sess = create_session()
+            job = db_sess.query(Jobs).filter(Jobs.job == form.job.data).first()
+            if job:
+                return render_template('job.html', title='Данная работа уже была добавлена', form=form)
+
+            db_sess = create_session()
+            job = Jobs()
+            job.job = form.job.data
+            job.team_leader = form.team_leader.data
+            job.work_size = form.work_size.data
+            job.collaborators = form.collaborators.data
+            db_sess.add(job)
+            db_sess.commit()
+            return redirect('/')
+        return render_template('job.html', title='Добавление работы', form=form)
+    else:
+        return redirect('/login')
 
 
 def main():
