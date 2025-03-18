@@ -3,7 +3,6 @@
 {% block title %} Главная страница {% endblock %}
 
 {% block content %}
-<h2>Здравствуй, {{name}}!</h2>
 <h3 style="text-align: center;">Доступные задачи:</h3>
 {% for i in range(sql | length) %}
     <h3>Action # {{i + 1}}</h3>
