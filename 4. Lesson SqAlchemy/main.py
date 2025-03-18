@@ -95,6 +95,12 @@ def add_job():
         return redirect('/login')
 
 
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect('/login')
+
+
 def main():
     app.run()
 
