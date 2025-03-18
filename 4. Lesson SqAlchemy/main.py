@@ -15,24 +15,6 @@ lm.init_app(app)
 global_init('db/loggined.db')
 
 
-# db_sess = create_session()
-# user = User()
-# user.id = 1
-# user.name = 'admin'
-# user.email = 'admin@admin.py'
-# user.set_password('admin')
-# db_sess.add(user)
-# db_sess.commit()
-
-# db_sess = create_session()
-# job = Jobs()
-# job.job = 'Wash hands'
-# job.work_size = 5
-# job.collaborators = '1,2'
-# db_sess.add(job)
-# db_sess.commit()
-
-
 @lm.user_loader
 def load_user(user_id):
     db_sess = create_session()

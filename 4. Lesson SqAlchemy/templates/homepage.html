@@ -3,8 +3,8 @@
 {% block title %} Главная страница {% endblock %}
 
 {% block content %}
-<h1>Здравствуй, {{name}}!</h1>
-<h2 style="text-align: center;">Доступные задачи:</h2>
+<h2>Здравствуй, {{name}}!</h2>
+<h3 style="text-align: center;">Доступные задачи:</h3>
 {% for i in range(sql | length) %}
     <h3>Action # {{i + 1}}</h3>
     <table class="table table-striped">
