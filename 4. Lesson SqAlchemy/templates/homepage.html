@@ -6,6 +6,9 @@
 <div style="width: 60%; max-width: 800px; background-color: #f9f9f9; padding: 20px;">
 <h3 align="center">Доступные задачи:</h3>
 <p> </p>
+    {% if not sql %}
+    <h6 style="color: gray" align="center">пусто</h6>
+    {% else %}
 {% for i in range(sql | length) %}
     <h4>Работа # {{i + 1}}</h4>
     <table class="table table-striped">
@@ -29,6 +32,7 @@
         </tbody>
     </table>
 {% endfor %}
+    {% endif %}
 </div>
 </div>
 {% endblock %}

@@ -14,6 +14,15 @@ lm = LoginManager()
 lm.init_app(app)
 global_init('db/loggined.db')
 
+db_sess = create_session()
+if not db_sess.query(User).filter(User.name == 'admin').first():
+    user = User()
+    user.name = 'admin'
+    user.email = 'admin@admin.py'
+    user.set_password('admin')
+    db_sess.add(user)
+    db_sess.commit()
+
 
 @lm.user_loader
 def load_user(user_id):
@@ -71,10 +80,20 @@ def register():
     return render_template('register.html', title='Регистрация', form=form)
 
 
+def get_users():
+    db_sess = create_session()
+    users = []
+    for i in db_sess.query(User).all():
+        users.append((i.id, i.name))
+    return users
+
+
 @app.route('/add_job', methods=['GET', 'POST'])
 def add_job():
     if current_user.is_authenticated:
         form = JobForm()
+        form.team_leader.choices = get_users()
+        form.collaborators.choices = get_users()
         if form.validate_on_submit():
             db_sess = create_session()
             job = db_sess.query(Jobs).filter(Jobs.job == form.job.data).first()
@@ -86,7 +105,8 @@ def add_job():
             job.job = form.job.data
             job.team_leader = form.team_leader.data
             job.work_size = form.work_size.data
-            job.collaborators = form.collaborators.data
+            job.collaborators = ','.join(form.collaborators.data)
+            job.is_finished = form.is_finished.data
             db_sess.add(job)
             db_sess.commit()
             return redirect('/')
@@ -102,6 +122,7 @@ def logout():
 
 
 def main():
+    # app.run(host='26.236.206.238', port='80') # для запуска локального сервера
     app.run()
 
 
