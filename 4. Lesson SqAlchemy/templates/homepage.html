@@ -3,17 +3,20 @@
 {% block title %} Главная страница {% endblock %}
 
 {% block content %}
-<h3 style="text-align: center;">Доступные задачи:</h3>
+<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    <div style="width: 60%; max-width: 800px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+<h3 align="center">Доступные задачи:</h3>
+<p> </p>
 {% for i in range(sql | length) %}
-    <h3>Action # {{i + 1}}</h3>
+    <h4>Работа # {{i + 1}}</h4>
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Title of activity</th>
-                <th>Team leader</th>
-                <th>Duration</th>
-                <th>List of collaborators</th>
-                <th>Is finished</th>
+                <th>Суть работы</th>
+                <th>id лидера</th>
+                <th>Длительность</th>
+                <th>Сотрудники</th>
+                <th>Закончена</th>
             </tr>
         </thead>
         <tbody>
@@ -27,4 +30,6 @@
         </tbody>
     </table>
 {% endfor %}
+</div>
+</div>
 {% endblock %}

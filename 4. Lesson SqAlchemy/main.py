@@ -79,7 +79,7 @@ def add_job():
             db_sess = create_session()
             job = db_sess.query(Jobs).filter(Jobs.job == form.job.data).first()
             if job:
-                return render_template('job.html', title='Данная работа уже была добавлена', form=form)
+                return render_template('add_job.html', title='Данная работа уже была добавлена', form=form)
 
             db_sess = create_session()
             job = Jobs()
@@ -90,7 +90,7 @@ def add_job():
             db_sess.add(job)
             db_sess.commit()
             return redirect('/')
-        return render_template('job.html', title='Добавление работы', form=form)
+        return render_template('add_job.html', title='Добавление работы', form=form)
     else:
         return redirect('/login')
 

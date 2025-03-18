@@ -3,6 +3,8 @@
 {% block title %} Добавление работы {% endblock %}
 
 {% block content %}
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="width: 100%; max-width: 400px;">
   <h2 align="center">Добавление работы</h2>
     <form action="" method="post">
         {{ form.hidden_tag() }}
@@ -46,4 +48,6 @@
         <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
         <div>{{ message }}</div>
     </form>
+    </div>
+  </div>
 {% endblock %}
