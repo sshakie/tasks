@@ -13,10 +13,13 @@
             <a href="/login" class="btn btn-primary">Войти</a>
             <a href="/register" class="btn btn-primary">Регистрация</a>
         {% else %}
+            <div class="d-flex align-items-center gap-3">
             <a href="/" class="text-decoration-none text-dark">
-            <h4 class="mb-0"> {{current_user.name}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mars One </h4>
+              <h4 class="mb-0"> Mars One </h4>
             </a>
+            <a href="/login" class="text-decoration-none text-dark">{{current_user.name}}</a>
             <a href="/add_job" class="btn btn-secondary">Добавить работу</a>
+            </div>
         {% endif %}
     </div>
 </div>
