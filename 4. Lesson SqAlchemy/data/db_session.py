@@ -2,12 +2,12 @@ import sqlalchemy
 from sqlalchemy.orm import *
 
 SqlAlchemyBase = declarative_base()
-factory = None
+_factory = None
 
 
 def global_init(db_file):
-    global factory
-    if factory:
+    global _factory
+    if _factory:
         return
 
     if not db_file or not db_file.strip():
@@ -16,12 +16,12 @@ def global_init(db_file):
     conn_str = f'sqlite:///{db_file.strip()}?check_same_thread=False'
 
     engine = sqlalchemy.create_engine(conn_str, echo=False)
-    factory = sessionmaker(bind=engine)
+    _factory = sessionmaker(bind=engine)
 
     from data._all_modules import User, Jobs
     SqlAlchemyBase.metadata.create_all(engine)
 
 
 def create_session() -> Session:
-    global factory
-    return factory()
+    global _factory
+    return _factory()

@@ -10,13 +10,7 @@
     <h6 style="color: gray" align="center">пусто</h6>
     {% else %}
 {% for i in range(sql | length) %}
-    <h4>Работа # {{sql[i].id}}</h4>
-    <div class="table-container">
-            <div class="btn-container">
-                {% if current_user.id == sql[i].team_leader or current_user.id == 1%}
-                <a href="/jobs/{{sql[i].id}}" class="btn btn-secondary">Редактировать</a>
-                {% endif %}
-            </div>
+    <h4>Работа # {{i + 1}}</h4>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -37,7 +31,6 @@
             </tr>
         </tbody>
     </table>
-    </div>
 {% endfor %}
     {% endif %}
 </div>

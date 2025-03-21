@@ -1,0 +1,19 @@
+.table-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-container {
+    position: absolute;
+    top: 63%;
+    left: -150px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.table-container:hover .btn-container,
+.btn-container:hover {
+    opacity: 1
+}

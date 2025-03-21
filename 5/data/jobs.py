@@ -1,9 +1,10 @@
 from data.db_session import SqlAlchemyBase
+from sqlalchemy_serializer import SerializerMixin
 import sqlalchemy
 import datetime
 
 
-class Jobs(SqlAlchemyBase):
+class Jobs(SqlAlchemyBase, SerializerMixin):
     __tablename__ = 'jobs'
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     team_leader = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey('users.id'))
