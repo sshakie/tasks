@@ -156,8 +156,19 @@ def edit_job(id):
             return redirect('/')
         else:
             abort(404)
-
     return render_template('add_job.html', title='Редактировать работу', form=form)
+
+
+@app.route('/job_delete/<int:id>', methods=['GET', 'POST'])
+@login_required
+def delete_job(id):
+    db_sess = create_session()
+    job = db_sess.query(Jobs).filter(Jobs.id == id,
+                                     (Jobs.team_leader == current_user.id) | (current_user.id == 1)).first()
+    db_sess.delete(job)
+    db_sess.commit()
+    db_sess.close()
+    return redirect('/')
 
 
 @app.route('/logout')
