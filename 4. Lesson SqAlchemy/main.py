@@ -19,7 +19,7 @@ global_init('db/loggined.db')
 db_sess = create_session()
 if not db_sess.query(User).filter(User.name == 'admin').first():
     user = User()
-    user.surname = 'adminover'
+    user.surname = 'admin'
     user.name = 'admin'
     user.email = 'admin@admin.py'
     user.set_password('admin')
