@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %} Создание аккаунта {% endblock %}
+
+{% block content %}
+<h6 style="color: #808080">И на Марсе будут яблони цвести!</h6>
+<div style="display: flex; justify-content: center; align-items: center; height: 125vh">
+<div style="width: 100%; max-width: 400px">
+    <h2 align="center">Регистрация</h2>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+
+        <p> {{ form.email.label }}<br> </p>
+        {{ form.email(class="form-control") }}<br>
+
+        <p> {{ form.password.label }}<br> </p>
+        {{ form.password(class="form-control") }}<br>
+
+        <p> {{ form.confirm_password.label }}<br> </p>
+        {{ form.confirm_password(class="form-control") }}<br>
+
+        <p> {{ form.surname.label }}<br> </p>
+        {{ form.surname(class="form-control") }}<br>
+
+        <p> {{ form.name.label }}<br> </p>
+        {{ form.name(class="form-control") }}<br>
+
+        <p> {{ form.age.label }}<br> </p>
+        {{ form.age(class="form-control") }}<br>
+
+        <p> {{ form.position.label }}<br> </p>
+        {{ form.position(class="form-control") }}<br>
+
+        <p> {{ form.speciality.label }}<br> </p>
+        {{ form.speciality(class="form-control") }}<br>
+
+        <p> {{ form.address.label }}<br> </p>
+        {{ form.address(class="form-control") }}<br>
+
+        <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+        <div>{{ message }}</div>
+
+    </form>
+</div>
+</div>
+{% endblock %}

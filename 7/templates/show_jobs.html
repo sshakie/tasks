@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for i in range(sql | length) %}
+        <h3>Action # {{i + 1}}</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title of activity</th>
+                    <th>Team leader</th>
+                    <th>Duration</th>
+                    <th>List of collaborators</th>
+                    <th>Is finished</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{sql[i].job}}</td>
+                    <td>{{sql[i].team_leader}}</td>
+                    <td>{{sql[i].work_size}}</td>
+                    <td>{{sql[i].collaborators}}</td>
+                    <td>{{sql[i].is_finished}}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endfor %}
+{% endblock %}
