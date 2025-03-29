@@ -7,7 +7,7 @@ from blanks.registerform import RegisterForm
 from blanks.jobform import JobForm
 from data.db_session import *
 from requests import *
-import api
+import api_jobs
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_promises'
@@ -15,7 +15,7 @@ app.config['SECRET_KEY'] = 'my_promises'
 lm = LoginManager()
 lm.init_app(app)
 global_init('db/loggined.db')
-app.register_blueprint(api.blueprint)
+app.register_blueprint(api_jobs.blueprint)
 
 db_sess = create_session()
 if not db_sess.query(User).filter(User.name == 'admin').first():

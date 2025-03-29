@@ -6,8 +6,8 @@ _factory = None
 
 
 def global_init(db_file):
-    global _factory
-    if _factory:
+    global __factory
+    if __factory:
         return
 
     if not db_file or not db_file.strip():
@@ -16,12 +16,12 @@ def global_init(db_file):
     conn_str = f'sqlite:///{db_file.strip()}?check_same_thread=False'
 
     engine = sqlalchemy.create_engine(conn_str, echo=False)
-    _factory = sessionmaker(bind=engine)
+    __factory = sessionmaker(bind=engine)
 
-    from data._all_modules import User, Jobs
+    from data.__all_modeles import User, Jobs
     SqlAlchemyBase.metadata.create_all(engine)
 
 
 def create_session() -> Session:
-    global _factory
-    return _factory()
+    global __factory
+    return __factory()
