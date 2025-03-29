@@ -4,49 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed 3. job's log (2)">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/Job-s-log.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/data/__all_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/data/db_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/data/jobs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/data/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/db/mars_explorer.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/h-h-hiii...py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Job's log/templates/show_jobs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/Job-s-log.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/data/__all_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/data/db_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/data/jobs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/data/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/db/mars_explorer.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/h-h-hiii...py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/templates/show_jobs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/blanks/registerform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/data/__all_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/data/db_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/data/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8/templates/register.html" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did 5. Registration Form and fixed job's log">
+      <change afterPath="$PROJECT_DIR$/7/nado sosdat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/_all_modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/__all_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +58,7 @@
     "Python.main [zBJQRc].executor": "Run",
     "Python.main.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.users.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -157,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743251912985</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="did 5. Registration Form and fixed job's log">
+      <option name="closed" value="true" />
+      <created>1743256857375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743256857375</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,6 +137,7 @@
     <MESSAGE value="did delete job" />
     <MESSAGE value="fixed 3. job's log" />
     <MESSAGE value="fixed 3. job's log (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed 3. job's log (2)" />
+    <MESSAGE value="did 5. Registration Form and fixed job's log" />
+    <option name="LAST_COMMIT_MESSAGE" value="did 5. Registration Form and fixed job's log" />
   </component>
 </project>
