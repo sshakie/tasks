@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did 5. Registration Form and fixed job's log">
-      <change afterPath="$PROJECT_DIR$/7/nado sosdat.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="deleted old db">
+      <change afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/blanks/departamentform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/departaments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/add_departament.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/departaments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/_all_modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/__all_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/blanks/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/blanks/registerform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/__all_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/db_session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/db/loggined.db" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/db/loggined.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/jobs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/6/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/nado sosdat.py" beforeDir="false" afterPath="$PROJECT_DIR$/7/nado sosdat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +68,22 @@
     "Python.h-h-hiii...executor": "Run",
     "Python.main [zBJQRc].executor": "Run",
     "Python.main.executor": "Run",
+    "Python.nado sosdat.executor": "Run",
     "Python.test.executor": "Run",
     "Python.users.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks"
+    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks/4. Lesson SqAlchemy/templates"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\4. Lesson SqAlchemy\templates" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\4. Lesson SqAlchemy\blanks" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\5" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\5\db" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\5." />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -129,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743256857375</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed task">
+      <option name="closed" value="true" />
+      <created>1743258419082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743258419082</updated>
+    </task>
+    <task id="LOCAL-00007" summary="deleted old db">
+      <option name="closed" value="true" />
+      <created>1743258569458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743258569458</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,6 +167,8 @@
     <MESSAGE value="fixed 3. job's log" />
     <MESSAGE value="fixed 3. job's log (2)" />
     <MESSAGE value="did 5. Registration Form and fixed job's log" />
-    <option name="LAST_COMMIT_MESSAGE" value="did 5. Registration Form and fixed job's log" />
+    <MESSAGE value="fixed task" />
+    <MESSAGE value="deleted old db" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted old db" />
   </component>
 </project>

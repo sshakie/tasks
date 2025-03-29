@@ -1,3 +1,4 @@
+from data.db_session import *
 # from data.db_session import SqlAlchemyBase
 # import sqlalchemy
 # import datetime
@@ -13,13 +14,8 @@
 #     created_date = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.now)
 
 
-global_init(input())
+global_init('db/mars_explorer.db')
 db_sess = create_session()
+db_sess = db_sess.query(User).all()
 
-department = db_sess.query(Departments).filter(Departments.id == 1).first()
-a = list(map(int, department.members.split(',')))
-
-for ii in a:
-    for i in db_sess.query(User).filter(User.id == ii).all():
-        if sum(i.work_size for i in db_sess.query(Jobs).filter(Jobs.collaborators.like(f'%{i.id}%')).all()) > 25:
-            print(f'{i.surname} {i.name}')
+print([i for i in db_sess if i.id == 1])

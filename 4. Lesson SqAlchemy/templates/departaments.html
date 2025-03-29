@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %} Список департаментов {% endblock %}
+
+{% block content %}
+<a href="/add_departament" class="btn btn-secondary">Добавить департамент</a>
+<a href="/jobs" class="btn btn-secondary">Вернуться к работам</a>
+<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh">
+<div style="width: 60%; max-width: 800px; background-color: #f9f9f9; padding: 20px;">
+<h3 align="center">Список департаментов:</h3>
+<p> </p>
+    {% if not sql %}
+    <h6 style="color: gray" align="center">пусто</h6>
+    {% else %}
+{% for i in range(sql | length) %}
+    <h4>Департамент # {{sql[i].id}}</h4>
+    <div class="table-container">
+            <div class="btn-container">
+                {% if current_user.id == sql[i].chief or current_user.id == 1%}
+                <a href="/departaments/{{sql[i].id}}" class="btn btn-secondary">Редактировать</a>
+                <a href="/departament_delete/{{sql[i].id}}" class="btn btn-danger">Удалить</a>
+                {% endif %}
+            </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>ФИО шефа</th>
+                <th>Участники</th>
+                <th>Почта</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{sql[i].title}}</td>
+                <td>
+                  {% for ii in sql2 %}
+                    {% if ii.id == sql[i].id %}
+                      {{ ii.surname }} {{ ii.name }}
+                    {% endif %}
+                    {% endfor %}
+                </td>
+                <td>{{sql[i].members}}</td>
+                <td>{{sql[i].email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+{% endfor %}
+    {% endif %}
+</div>
+</div>
+{% endblock %}

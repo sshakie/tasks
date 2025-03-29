@@ -2,9 +2,11 @@ from flask import *
 from flask_login import *
 from data.users import User
 from data.jobs import Jobs
+from data.departaments import Departament
 from blanks.loginform import LoginForm
 from blanks.registerform import RegisterForm
 from blanks.jobform import JobForm
+from blanks.departamentform import DepartamentForm
 from data.db_session import *
 
 app = Flask(__name__)
@@ -17,6 +19,7 @@ global_init('db/loggined.db')
 db_sess = create_session()
 if not db_sess.query(User).filter(User.name == 'admin').first():
     user = User()
+    user.surname = 'adminover'
     user.name = 'admin'
     user.email = 'admin@admin.py'
     user.set_password('admin')
@@ -34,7 +37,7 @@ def load_user(user_id):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect('/')
+        return redirect('/jobs')
 
     form = LoginForm()
     if form.validate_on_submit():
@@ -43,7 +46,7 @@ def login():
         db_sess.close()
         if user and user.check_password(form.password.data):
             login_user(user, remember=form.remember_me.data)
-            return redirect('/')
+            return redirect('/jobs')
         return render_template('login.html', message='Неправильный логин или пароль', form=form)
     return render_template('login.html', title='Авторизация', form=form)
 
@@ -51,8 +54,24 @@ def login():
 @app.route('/')
 def homepage():
     if current_user.is_authenticated:
+        return redirect('/jobs')
+    return redirect('/login')
+
+
+@app.route('/jobs')
+def jobs():
+    if current_user.is_authenticated:
         db_sess = create_session()
-        return render_template('homepage.html', sql=db_sess.query(Jobs).all(), name=current_user.name)
+        return render_template('jobs.html', sql=db_sess.query(Jobs).all(), sql2=db_sess.query(User).all(), name=current_user.name)
+    return redirect('/login')
+
+
+@app.route('/departaments')
+def departaments():
+    if current_user.is_authenticated:
+        db_sess = create_session()
+        return render_template('departaments.html', sql=db_sess.query(Departament).all(),
+                               sql2=db_sess.query(User).all(), name=current_user.name)
     return redirect('/login')
 
 
@@ -65,28 +84,31 @@ def register():
     if form.validate_on_submit():
         db_sess = create_session()
         user = db_sess.query(User).filter(User.email == form.email.data).first()
-        db_sess.close()
         if user:
             return render_template('register.html', message='Данная почта уже зарегистрирована. Попробуйте войти.',
                                    form=form)
         else:
-            db_sess = create_session()
             user = User()
-            user.name = form.name.data
             user.email = form.email.data
             user.set_password(form.password.data)
+            user.surname = form.surname.data
+            user.name = form.name.data
+            user.age = form.age.data
+            user.position = form.position.data
+            user.speciality = form.speciality.data
+            user.address = form.address.data
             db_sess.add(user)
             db_sess.commit()
-            db_sess.close()
 
             login_user(user, remember=form.remember_me.data)
-            return redirect('/')
+            db_sess.close()
+            return redirect('/jobs')
     return render_template('register.html', title='Регистрация', form=form)
 
 
 def get_users():
     db_sess = create_session()
-    users = [(user.id, user.name) for user in db_sess.query(User).all()]
+    users = [(user.id, f'{user.surname} {user.name}') for user in db_sess.query(User).all()]
     db_sess.close()
     return users
 
@@ -113,7 +135,7 @@ def add_job():
             db_sess.add(job)
             db_sess.commit()
             db_sess.close()
-            return redirect('/')
+            return redirect('/jobs')
         return render_template('add_job.html', title='Добавление работы', form=form)
     else:
         return redirect('/login')
@@ -153,7 +175,7 @@ def edit_job(id):
             job.is_finished = form.is_finished.data
             db_sess.commit()
             db_sess.close()
-            return redirect('/')
+            return redirect('/jobs')
         else:
             abort(404)
     return render_template('add_job.html', title='Редактировать работу', form=form)
@@ -168,7 +190,86 @@ def delete_job(id):
     db_sess.delete(job)
     db_sess.commit()
     db_sess.close()
-    return redirect('/')
+    return redirect('/jobs')
+
+
+@app.route('/add_departament', methods=['GET', 'POST'])
+def add_departament():
+    if current_user.is_authenticated:
+        form = DepartamentForm()
+        form.chief.choices = get_users()
+        form.members.choices = get_users()
+        if form.validate_on_submit():
+            db_sess = create_session()
+            departament = db_sess.query(Departament).filter(Departament.title == form.title.data).first()
+            if departament:
+                return render_template('add_departament.html', title='Данный департамент уже был добавлен', form=form)
+
+            departament = Departament()
+            departament.title = form.title.data
+            departament.chief = form.chief.data
+            departament.members = ','.join(form.members.data)
+            departament.email = form.email.data
+            db_sess.add(departament)
+            db_sess.commit()
+            db_sess.close()
+            return redirect('/departaments')
+        return render_template('add_departament.html', title='Добавление департамента', form=form)
+    else:
+        return redirect('/login')
+
+
+@app.route('/departaments/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit_departament(id):
+    form = DepartamentForm()
+    form.submit.label.text = 'Изменить'
+    form.chief.choices = get_users()
+    form.members.choices = get_users()
+
+    if request.method == 'GET':
+        db_sess = create_session()
+        departament = db_sess.query(Departament).filter(Departament.id == id,
+                                                        (Departament.chief == current_user.id) | (
+                                                                current_user.id == 1)).first()
+        if departament:
+            form.title.data = departament.title
+            form.chief.data = int(departament.chief)
+            form.email.data = departament.email
+            form.members.data = list(map(int, departament.members.split(','))) if departament.members else []
+        else:
+            abort(404)
+        db_sess.close()
+
+    elif form.validate_on_submit():
+        db_sess = create_session()
+        departament = db_sess.query(Departament).filter(Departament.id == id,
+                                                        (Departament.chief == current_user.id) | (
+                                                                current_user.id == 1)).first()
+        if departament:
+            departament.title = form.title.data
+            departament.chief = form.chief.data
+            departament.members = ','.join(form.members.data)
+            departament.email = form.email.data
+            db_sess.commit()
+            db_sess.close()
+            return redirect('/departaments')
+        else:
+            abort(404)
+    return render_template('add_departament.html', title='Редактировать департамент', form=form)
+
+
+@app.route('/departament_delete/<int:id>', methods=['GET', 'POST'])
+@login_required
+def delete_departament(id):
+    db_sess = create_session()
+    departament = db_sess.query(Departament).filter(Departament.id == id,
+                                                    (Departament.chief == current_user.id) | (
+                                                            current_user.id == 1)).first()
+    db_sess.delete(departament)
+    db_sess.commit()
+    db_sess.close()
+    return redirect('/departaments')
 
 
 @app.route('/logout')

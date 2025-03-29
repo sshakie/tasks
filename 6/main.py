@@ -53,7 +53,7 @@ def login():
 def homepage():
     if current_user.is_authenticated:
         db_sess = create_session()
-        return render_template('homepage.html', sql=db_sess.query(Jobs).all(), name=current_user.name)
+        return render_template('jobs.html', sql=db_sess.query(Jobs).all(), name=current_user.name)
     return redirect('/login')
 
 
