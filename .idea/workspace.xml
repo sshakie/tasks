@@ -4,11 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed + did departaments in sqlalchemy">
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="finally fixed sqlalchemy">
+      <change afterPath="$PROJECT_DIR$/!/6. Rest-API/data/__all_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. Registration Form/db/loggined.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/api/api_jobs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/api/api_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/data/__all_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/data/db_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/data/jobs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/data/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/templates/users_show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. Rest-API copy/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/db/loggined.db" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/db/loggined.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/jobs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/api_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/api_jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/api_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/api_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/blanks/jobform.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/blanks/jobform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/blanks/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/blanks/loginform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/blanks/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/blanks/registerform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/data/_all_modules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/data/jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/db/loggined.db" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/db/loggined.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/e4wt.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/e4wt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/templates/add_job.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/templates/add_job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/Job-s-log.iml" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/Job-s-log.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/data/__all_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/data/jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/db/mars_explorer.db" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/db/mars_explorer.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/h-h-hiii...py" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/h-h-hiii...py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/nado sosdat.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/nado sosdat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7/templates/show_jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/!/00/templates/show_jobs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +62,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,28 +95,63 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.2.executor": "Run",
     "Python.api.executor": "Run",
     "Python.e4wt.executor": "Run",
     "Python.h-h-hiii...executor": "Run",
     "Python.main [zBJQRc].executor": "Run",
     "Python.main.executor": "Run",
     "Python.nado sosdat.executor": "Run",
+    "Python.rest-api.executor": "Run",
     "Python.test.executor": "Run",
     "Python.users.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks/4. Lesson SqAlchemy/templates"
+    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks/6. Rest-API copy/templates"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\4. Lesson SqAlchemy\templates" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\4. Lesson SqAlchemy\blanks" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy\templates" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\5" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\5\db" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\doing4\templates" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\doing3\templates" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\333\data" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy\api" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\9\static" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\9\static\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="rest-api" type="PythonConfigurationType" factoryName="Python">
+      <module name="tasks" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6. Rest-API copy/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -154,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743264018956</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finally fixed sqlalchemy">
+      <option name="closed" value="true" />
+      <created>1743265072507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743265072507</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +253,7 @@
     <MESSAGE value="fixed task" />
     <MESSAGE value="deleted old db" />
     <MESSAGE value="fixed + did departaments in sqlalchemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed + did departaments in sqlalchemy" />
+    <MESSAGE value="finally fixed sqlalchemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally fixed sqlalchemy" />
   </component>
 </project>
