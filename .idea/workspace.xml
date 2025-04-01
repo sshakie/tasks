@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did restful api [1/2 (tests)]">
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did restful api [2/2]">
+      <change afterPath="$PROJECT_DIR$/8 deploy/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/7 Restful API/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/utility/aborts.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/utility/aborts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743506750323</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="did restful api [2/2]">
+      <option name="closed" value="true" />
+      <created>1743507128691</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743507128691</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +216,7 @@
     <MESSAGE value="finally fixed sqlalchemy" />
     <MESSAGE value="did using api (rest-api)" />
     <MESSAGE value="did restful api [1/2 (tests)]" />
-    <option name="LAST_COMMIT_MESSAGE" value="did restful api [1/2 (tests)]" />
+    <MESSAGE value="did restful api [2/2]" />
+    <option name="LAST_COMMIT_MESSAGE" value="did restful api [2/2]" />
   </component>
 </project>

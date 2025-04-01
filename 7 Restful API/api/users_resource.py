@@ -2,20 +2,20 @@ from flask import jsonify
 from flask_restful import Resource
 from data.db_session import create_session
 from data.users import User
-from utility.aborts import user_abort_not_found
+from utility.aborts import abort_not_found
 from utility.parsers import user_parser
 
 
 class UsersResource(Resource):
     def get(self, id):
-        user_abort_not_found(id)
+        abort_not_found(id, User)
         session = create_session()
         user = session.query(User).get(id)
         session.close()
         return jsonify({'users': user.to_dict()})
 
     def delete(self, id):
-        user_abort_not_found(id)
+        abort_not_found(id, User)
         session = create_session()
         session.delete(session.query(User).get(id))
         session.commit()

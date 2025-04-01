@@ -1,4 +1,4 @@
-from requests import get, post, delete
+from requests import get, post, delete, put
 
 # Проверка users (всё рабочее)
 print(get('http://localhost:5000/api/v2/users').json())
@@ -21,6 +21,7 @@ print(post('http://localhost:5000/api/v2/jobs',
            json={'team_leader': 1, 'job': 'купить молоко', 'work_size': 24, 'collaborators': '1,2',
                  'is_finished': False}).json())
 print(get('http://localhost:5000/api/v2/jobs/1').json())
+print(put('http://localhost:5000/api/v2/jobs/1', json={'is_finished': True}).json())
 print(delete('http://localhost:5000/api/v2/jobs/1').json())
 print()
 
@@ -28,4 +29,5 @@ print()
 print(post('http://localhost:5000/api/v2/jobs', json={}).json())  # подается пустой json
 print(post('http://localhost:5000/api/v2/jobs', json={'team_leader': 1}).json())  # неполный запрос
 print(get('http://localhost:5000/api/v2/jobs/10').json())  # не существует в таблице
-print(delete('http://localhost:5000/api/v2/jobs/1').json())  # не существует в таблице
+print(put('http://localhost:5000/api/v2/jobs/10', json={'is_finished': True}).json())  # не существует в таблице
+print(delete('http://localhost:5000/api/v2/jobs/10').json())  # не существует в таблице

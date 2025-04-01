@@ -2,25 +2,45 @@ from flask import jsonify
 from flask_restful import Resource
 from data.db_session import create_session
 from data.jobs import Job
-from utility.aborts import job_abort_not_found
-from utility.parsers import job_parser
+from utility.aborts import abort_not_found
+from utility.parsers import job_parser, put_job_parser
 
 
 class JobsResource(Resource):
     def get(self, id):
-        job_abort_not_found(id)
+        abort_not_found(id, Job)
         session = create_session()
         job = session.query(Job).get(id)
         session.close()
         return jsonify({'jobs': job.to_dict()})
 
     def delete(self, id):
-        job_abort_not_found(id)
+        abort_not_found(id, Job)
         session = create_session()
         session.delete(session.query(Job).get(id))
         session.commit()
         session.close()
         return jsonify({'success': 'deleted!'})
+
+    def put(self, id):
+        abort_not_found(id, Job)
+        args = put_job_parser.parse_args()
+        session = create_session()
+        job = session.query(Job).get(id)
+        if 'team_leader' in args:
+            job.team_leader = args.team_leader
+        if 'job' in args:
+            job.team_leader = args.team_leader
+        if 'work_size' in args:
+            job.team_leader = args.team_leader
+        if 'collaborators' in args:
+            job.team_leader = args.team_leader
+        if 'is_finished' in args:
+            job.team_leader = args.team_leader
+        if 'team_leader' in args:
+            job.team_leader = args.team_leader
+        session.close()
+        return jsonify({'success': 'edited!'})
 
 
 class JobsListResource(Resource):
