@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did put method in jobs">
-      <change afterPath="$PROJECT_DIR$/8 deploy/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 deploy/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 deploy/start.sh" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed connection between db-tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 deploy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 deploy/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743509567486</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed connection between db-tables">
+      <option name="closed" value="true" />
+      <created>1743767078547</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743767078547</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,6 +228,7 @@
     <MESSAGE value="did restful api [1/2 (tests)]" />
     <MESSAGE value="did restful api [2/2]" />
     <MESSAGE value="did put method in jobs" />
-    <option name="LAST_COMMIT_MESSAGE" value="did put method in jobs" />
+    <MESSAGE value="fixed connection between db-tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed connection between db-tables" />
   </component>
 </project>

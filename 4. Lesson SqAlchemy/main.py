@@ -1,5 +1,5 @@
-from flask import *
-from flask_login import *
+from flask import Flask, request, render_template, redirect, abort
+from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from data.users import User
 from data.jobs import Jobs
 from data.departaments import Departament
@@ -7,7 +7,7 @@ from blanks.loginform import LoginForm
 from blanks.registerform import RegisterForm
 from blanks.jobform import JobForm
 from blanks.departamentform import DepartamentForm
-from data.db_session import *
+from data.db_session import create_session, global_init
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_promises'

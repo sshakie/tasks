@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import *
-from wtforms.validators import *
+from wtforms import StringField, SelectField, SelectMultipleField, EmailField, SubmitField
+from wtforms.validators import DataRequired
 
 
 class DepartamentForm(FlaskForm):
