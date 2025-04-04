@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did restful api [2/2]">
-      <change afterPath="$PROJECT_DIR$/8 deploy/main.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did put method in jobs">
+      <change afterPath="$PROJECT_DIR$/8 deploy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 deploy/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 deploy/start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/utility/aborts.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/utility/aborts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 deploy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 deploy/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,40 +53,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.2.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.api_users.executor": "Run",
-    "Python.e4wt.executor": "Run",
-    "Python.h-h-hiii...executor": "Run",
-    "Python.main [zBJQRc].executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.nado sosdat.executor": "Run",
-    "Python.rest-api.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.users.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks/7 Restful API"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python.e4wt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.h-h-hiii...executor&quot;: &quot;Run&quot;,
+    &quot;Python.main [zBJQRc].executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nado sosdat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rest-api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.users.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2024.3.1.1/deploy&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy\templates" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\doing4\templates" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!\doing3\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\8 deploy" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API\utility" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API\apii" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API\abort" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\!" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy\api" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743507128691</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="did put method in jobs">
+      <option name="closed" value="true" />
+      <created>1743509567486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743509567486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,6 +225,7 @@
     <MESSAGE value="did using api (rest-api)" />
     <MESSAGE value="did restful api [1/2 (tests)]" />
     <MESSAGE value="did restful api [2/2]" />
-    <option name="LAST_COMMIT_MESSAGE" value="did restful api [2/2]" />
+    <MESSAGE value="did put method in jobs" />
+    <option name="LAST_COMMIT_MESSAGE" value="did put method in jobs" />
   </component>
 </project>
