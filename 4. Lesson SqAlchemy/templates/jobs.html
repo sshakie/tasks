@@ -27,6 +27,7 @@
                 <th>ФИО лидера</th>
                 <th>Длительность</th>
                 <th>Сотрудники</th>
+                <th>Опасности</th>
                 <th>Закончена</th>
             </tr>
         </thead>
@@ -41,6 +42,11 @@
                 </td>
                 <td>{{sql[i].work_size}} часов</td>
                 <td>{{sql[i].collaborators}}</td>
+                <td>
+                    {% for i in sql[i].hazards %}
+                    {{ i.level }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </td>
                 {% if sql[i].is_finished %}
                     <td>Да</td>
                 {% else %}

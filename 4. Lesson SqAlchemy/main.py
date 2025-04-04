@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, redirect, abort
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from data.users import User
 from data.jobs import Jobs
+from data.hazard import *
 from data.departaments import Departament
 from blanks.loginform import LoginForm
 from blanks.registerform import RegisterForm
@@ -14,7 +15,7 @@ app.config['SECRET_KEY'] = 'my_promises'
 
 lm = LoginManager()
 lm.init_app(app)
-global_init('db/loggined.db')
+global_init('db/table.db')
 
 db_sess = create_session()
 if not db_sess.query(User).filter(User.name == 'admin').first():
@@ -24,6 +25,16 @@ if not db_sess.query(User).filter(User.name == 'admin').first():
     user.email = 'admin@admin.py'
     user.set_password('admin')
     db_sess.add(user)
+
+    hazard = Hazard()
+    hazard.level = 'зеленый'
+    db_sess.add(hazard)
+    hazard = Hazard()
+    hazard.level = 'желтый'
+    db_sess.add(hazard)
+    hazard = Hazard()
+    hazard.level = 'красный'
+    db_sess.add(hazard)
     db_sess.commit()
 db_sess.close()
 
@@ -62,7 +73,8 @@ def homepage():
 def jobs():
     if current_user.is_authenticated:
         db_sess = create_session()
-        return render_template('jobs.html', sql=db_sess.query(Jobs).all(), sql2=db_sess.query(User).all(), name=current_user.name)
+        return render_template('jobs.html', sql=db_sess.query(Jobs).all(), sql2=db_sess.query(User).all(),
+                               name=current_user.name)
     return redirect('/login')
 
 
@@ -113,12 +125,20 @@ def get_users():
     return users
 
 
+def get_hazards():
+    db_sess = create_session()
+    harards = [(i.id, i.level) for i in db_sess.query(Hazard).all()]
+    db_sess.close()
+    return harards
+
+
 @app.route('/add_job', methods=['GET', 'POST'])
 def add_job():
     if current_user.is_authenticated:
         form = JobForm()
         form.team_leader.choices = get_users()
         form.collaborators.choices = get_users()
+        form.hazard.choices = get_hazards()
         if form.validate_on_submit():
             db_sess = create_session()
             job = db_sess.query(Jobs).filter(Jobs.job == form.job.data).first()
@@ -131,7 +151,8 @@ def add_job():
             job.work_size = form.work_size.data
             job.collaborators = ','.join(form.collaborators.data)
             job.is_finished = form.is_finished.data
-            job.owner = current_user.id
+            for i in form.hazard.data:
+                job.hazards.append(db_sess.query(Hazard).get(i))
             db_sess.add(job)
             db_sess.commit()
             db_sess.close()
@@ -148,6 +169,7 @@ def edit_job(id):
     form.submit.label.text = 'Изменить'
     form.team_leader.choices = get_users()
     form.collaborators.choices = get_users()
+    form.hazard.choices = get_hazards()
 
     if request.method == 'GET':
         db_sess = create_session()
@@ -159,6 +181,7 @@ def edit_job(id):
             form.work_size.data = job.work_size
             form.collaborators.data = list(map(int, job.collaborators.split(','))) if job.collaborators else []
             form.is_finished.data = job.is_finished
+            form.hazard.data = job.hazards
         else:
             abort(404)
         db_sess.close()
@@ -173,6 +196,18 @@ def edit_job(id):
             job.work_size = form.work_size.data
             job.collaborators = ','.join(map(str, form.collaborators.data))
             job.is_finished = form.is_finished.data
+
+            ids = set(map(int, form.hazard.data))
+            for i in list(job.hazards):
+                if i.id not in ids:
+                    job.hazards.remove(i)
+
+            for i in ids:
+                if i not in {h.id for h in job.hazards}:
+                    hazard = db_sess.query(Hazard).get(i)
+                    if hazard:
+                        job.hazards.append(hazard)
+
             db_sess.commit()
             db_sess.close()
             return redirect('/jobs')
@@ -187,6 +222,9 @@ def delete_job(id):
     db_sess = create_session()
     job = db_sess.query(Jobs).filter(Jobs.id == id,
                                      (Jobs.team_leader == current_user.id) | (current_user.id == 1)).first()
+    for i in job.hazards:
+        job.hazards.remove(i)
+    db_sess.commit()
     db_sess.delete(job)
     db_sess.commit()
     db_sess.close()

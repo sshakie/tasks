@@ -15,3 +15,4 @@ class Jobs(SqlAlchemyBase):
     is_finished = sqlalchemy.Column(sqlalchemy.Boolean, default=False)
 
     leader = sqlalchemy.orm.relationship('User')
+    hazards = sqlalchemy.orm.relationship('Hazard', secondary="association", backref='jobs')

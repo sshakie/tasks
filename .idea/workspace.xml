@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed connection between db-tables">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="changed imports" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743767078547</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="changed imports">
+      <option name="closed" value="true" />
+      <created>1743777295005</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743777295005</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +235,7 @@
     <MESSAGE value="did restful api [2/2]" />
     <MESSAGE value="did put method in jobs" />
     <MESSAGE value="fixed connection between db-tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed connection between db-tables" />
+    <MESSAGE value="changed imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed imports" />
   </component>
 </project>

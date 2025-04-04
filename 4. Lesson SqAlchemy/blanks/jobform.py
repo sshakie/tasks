@@ -8,6 +8,7 @@ class JobForm(FlaskForm):
     job = StringField('Работа', validators=[DataRequired()])
     work_size = IntegerField('Длительность', validators=[DataRequired()])
     collaborators = SelectMultipleField('Сотрудники', validators=[DataRequired()])
+    hazard = SelectMultipleField('Опасность', coerce=int,  validators=[DataRequired()])
     end_date = DateTimeField('Дедлайн')
     is_finished = BooleanField('Закончена')
     submit = SubmitField('Добавить')
