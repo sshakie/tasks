@@ -1,16 +1,17 @@
-from flask import *
-from flask_login import *
-from data.users import User
-from data.db_session import *
+from flask import Flask, render_template, redirect, make_response, jsonify
+from flask_login import LoginManager, logout_user, current_user
+from data.db_session import create_session, global_init
 import api.api_jobs, api.api_users
+from data.users import User
 import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_promises'
-
 lm = LoginManager()
+
+global_init('db/table.db')
 lm.init_app(app)
-global_init('db/loggined.db')
+
 app.register_blueprint(api.api_jobs.blueprint)
 app.register_blueprint(api.api_users.blueprint)
 
@@ -35,12 +36,17 @@ def load_user(user_id):
 @app.route('/logout')
 def logout():
     logout_user()
-    return redirect('/')
+    redirect('/')
 
 
 @app.errorhandler(404)
 def not_found(error):
-    return make_response(jsonify({'error': 'Wrong id type'}), 404)
+    return make_response(jsonify({'error': 'Not found'}), 404)
+
+
+@app.errorhandler(400)
+def bad_request(_):
+    return make_response(jsonify({'error': 'Bad Request'}), 400)
 
 
 if __name__ == '__main__':

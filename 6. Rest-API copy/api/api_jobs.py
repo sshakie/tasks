@@ -1,7 +1,7 @@
-import json
 from flask import request, jsonify, make_response, Blueprint, render_template
 from data.db_session import create_session
 from data.jobs import Jobs
+import json
 
 blueprint = Blueprint('api_jobs', __name__, template_folder='templates')
 

@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, redirect, abort
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from data.users import User
 from data.jobs import Jobs
-from data.hazard import *
+from data.hazard import association_table, Hazard
 from data.departaments import Departament
 from blanks.loginform import LoginForm
 from blanks.registerform import RegisterForm

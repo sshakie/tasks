@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="changed imports" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did last task">
+      <change afterPath="$PROJECT_DIR$/8 Alice/a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 Alice/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Registration Form/blanks/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/blanks/registerform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Registration Form/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Registration Form/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Registration Form/db/loggined.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5. Registration Form/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/api/api_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/api/api_jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/api/api_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/api/api_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/data/jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,26 +62,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python.e4wt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.h-h-hiii...executor&quot;: &quot;Run&quot;,
-    &quot;Python.main [zBJQRc].executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.nado sosdat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rest-api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.users.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2024.3.1.1/deploy&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.2.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.api_users.executor": "Run",
+    "Python.db_session.executor": "Run",
+    "Python.e4wt.executor": "Run",
+    "Python.h-h-hiii...executor": "Run",
+    "Python.jobs.executor": "Run",
+    "Python.main [zBJQRc].executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.nado sosdat.executor": "Run",
+    "Python.rest-api.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.users.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/deploy"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
@@ -217,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743777295005</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="did last task">
+      <option name="closed" value="true" />
+      <created>1743786064537</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743786064537</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -236,6 +263,7 @@
     <MESSAGE value="did put method in jobs" />
     <MESSAGE value="fixed connection between db-tables" />
     <MESSAGE value="changed imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed imports" />
+    <MESSAGE value="did last task" />
+    <option name="LAST_COMMIT_MESSAGE" value="did last task" />
   </component>
 </project>

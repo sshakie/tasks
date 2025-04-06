@@ -1,4 +1,4 @@
-import json, requests
+import json, requests, time
 from flask import request, jsonify, make_response, Blueprint, render_template
 from data.db_session import create_session
 from data.users import User
@@ -92,6 +92,7 @@ def show_users(id):
         f'https://geocode-maps.yandex.ru/1.x/?apikey=62621221-4d79-48d0-83e1-f7b8aa92eca3&geocode={user.city_from}&lang=ru_RU&format=json')
     ll = info.json()['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos'].replace(' ',
                                                                                                                  ',')
+    time.sleep(2)  # похоже меня яндекс карты блокирует здесь, просто на всякий случай поставлю это сюда
     req = requests.get(f'https://static-maps.yandex.ru/1.x/apikey=03ed6b30-9245-4897-8428-d44545081a7c&ll={ll}&z=10')
     with open('data/out.png', 'wb+') as file:
         file.write(req.content)

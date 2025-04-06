@@ -1,17 +1,15 @@
-from flask import *
-from flask_login import *
-from werkzeug.security import check_password_hash
-
+from flask import Flask, render_template, redirect
+from flask_login import LoginManager
 from data.users import User
 from blanks.registerform import RegisterForm
-from data.db_session import *
+from data.db_session import create_session, global_init
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_promises'
 
 lm = LoginManager()
 lm.init_app(app)
-global_init('db/loggined.db')
+global_init('db/table.db')
 
 
 @lm.user_loader
@@ -46,7 +44,7 @@ def register():
             db_sess.add(user)
             db_sess.commit()
             db_sess.close()
-            return redirect('/')
+            return 'успешно'
     return render_template('register.html', title='Регистрация', form=form)
 
 

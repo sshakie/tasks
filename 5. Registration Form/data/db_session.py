@@ -1,5 +1,5 @@
 import sqlalchemy
-from sqlalchemy.orm import *
+from sqlalchemy.orm import declarative_base, Session, sessionmaker
 
 SqlAlchemyBase = declarative_base()
 __factory = None
