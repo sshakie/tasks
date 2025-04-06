@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did last task">
-      <change afterPath="$PROJECT_DIR$/8 Alice/a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/main.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed some tasks">
+      <change beforePath="$PROJECT_DIR$/!/6. Rest-API/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/!/6. Rest-API/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/hazard.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/data/hazard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5. Registration Form/blanks/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/blanks/registerform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5. Registration Form/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/data/db_session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5. Registration Form/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/data/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5. Registration Form/db/loggined.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5. Registration Form/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/5. Registration Form/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/api/api_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/api/api_jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/api/api_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/api/api_users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/data/db_session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/data/jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/data/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/departaments.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/show_departaments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Lesson SqAlchemy/templates/show_jobs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6. Rest-API copy/templates/users_show.html" beforeDir="false" afterPath="$PROJECT_DIR$/6. Rest-API copy/templates/users_show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743786064537</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixed some tasks">
+      <option name="closed" value="true" />
+      <created>1743929745252</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743929745252</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -264,6 +265,7 @@
     <MESSAGE value="fixed connection between db-tables" />
     <MESSAGE value="changed imports" />
     <MESSAGE value="did last task" />
-    <option name="LAST_COMMIT_MESSAGE" value="did last task" />
+    <MESSAGE value="fixed some tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some tasks" />
   </component>
 </project>

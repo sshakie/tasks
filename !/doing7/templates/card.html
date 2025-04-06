@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for j in range(i | length) %}
+    {% if j == rand %}
+      <h3 align="center">{{i[j].surname}} {{i[j].name}}</h3>
+      <div class="text-center">
+        <img src="/{{i[j].photo}}" class="img-fluid">
+      </div>
+      <h5 align="center">{{ i[j].specialties|sort|join(', ') }}</h5>
+    {% endif %}
+{% endfor %}
+{% endblock %}

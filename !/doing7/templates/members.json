@@ -1,0 +1,22 @@
+{
+  "member": [
+    {
+      "name": "Иван",
+      "surname": "Петров",
+      "photo": "static/img/1.jpg",
+      "specialties": ["Капитан", "Штурман"]
+    },
+    {
+      "name": "Алексей",
+      "surname": "Сидоров",
+      "photo": "static/img/2.jpg",
+      "specialties": ["Бортинженер", "Механик"]
+    },
+    {
+      "name": "Елена",
+      "surname": "Козлова",
+      "photo": "static/img/3.jpg",
+      "specialties": ["Врач", "Биолог"]
+    }
+  ]
+}

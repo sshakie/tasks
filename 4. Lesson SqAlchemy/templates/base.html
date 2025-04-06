@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link type="text/css" href="{{ url_for('static', filename='button.css')}}" rel="stylesheet">
-  <title>Доступная работа</title>
+  <title>{% block title %}Nothing.{% endblock %}</title>
 </head>
 <body>
   <nav class="navbar navbar-light bg-light" style="position: fixed; top: 0; width: 100%">

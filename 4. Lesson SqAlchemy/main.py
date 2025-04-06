@@ -73,7 +73,7 @@ def homepage():
 def jobs():
     if current_user.is_authenticated:
         db_sess = create_session()
-        return render_template('jobs.html', sql=db_sess.query(Jobs).all(), sql2=db_sess.query(User).all(),
+        return render_template('show_jobs.html', sql=db_sess.query(Jobs).all(), sql2=db_sess.query(User).all(),
                                name=current_user.name)
     return redirect('/login')
 
@@ -82,7 +82,7 @@ def jobs():
 def departaments():
     if current_user.is_authenticated:
         db_sess = create_session()
-        return render_template('departaments.html', sql=db_sess.query(Departament).all(),
+        return render_template('show_departaments.html', sql=db_sess.query(Departament).all(),
                                sql2=db_sess.query(User).all(), name=current_user.name)
     return redirect('/login')
 
@@ -239,9 +239,10 @@ def add_departament():
         form.members.choices = get_users()
         if form.validate_on_submit():
             db_sess = create_session()
-            departament = db_sess.query(Departament).filter(Departament.title == form.title.data).first()
-            if departament:
-                return render_template('add_departament.html', title='Данный департамент уже был добавлен', form=form)
+            if db_sess.query(Departament).filter(Departament.title == form.title.data).first():
+                return render_template('add_departament.html', message='Такое название департамента уже существует', form=form)
+            elif db_sess.query(Departament).filter(Departament.email == form.email.data).first():
+                return render_template('add_departament.html', message='Такая почта департамента уже существует', form=form)
 
             departament = Departament()
             departament.title = form.title.data
