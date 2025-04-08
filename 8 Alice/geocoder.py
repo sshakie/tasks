@@ -1,24 +1,21 @@
 import requests, math
 
-def get_coordinates(city_name):
+
+def get_geo_info(city_name, type_info):
+    params = {'apikey': '62621221-4d79-48d0-83e1-f7b8aa92eca3', 'geocode': city_name, 'format': 'json'}
+    response = requests.get('https://geocode-maps.yandex.ru/1.x/', params).json()
     try:
-        params = {'apikey': '62621221-4d79-48d0-83e1-f7b8aa92eca3', 'geocode': city_name, 'format': 'json'}
-        response = requests.get('https://geocode-maps.yandex.ru/1.x/', params).json()
-        pos = response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos']
-        long, lat = map(float, pos.split())
-        return long, lat
+        if type_info == 'country':
+            return response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
+                'GeocoderMetaData']['AddressDetails']['Country']['CountryName']
+        elif type_info == 'coordinates':
+            long, lat = map(float,
+                            response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point'][
+                                'pos'].split())
+            return long, lat
     except Exception as e:
         return e
 
-
-def get_country(city_name):
-    try:
-        params = {'apikey': '62621221-4d79-48d0-83e1-f7b8aa92eca3', 'geocode': city_name, 'format': 'json'}
-        response = requests.get('https://geocode-maps.yandex.ru/1.x/', params).json()
-        return response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['metaDataProperty'][
-            'GeocoderMetaData']['AddressDetails']['Country']['CountryName']
-    except Exception as e:
-        return e
 
 def get_distance(p1, p2):
     radius = 6373.0
