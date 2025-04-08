@@ -204,9 +204,8 @@ def edit_job(id):
 
             for i in ids:
                 if i not in {h.id for h in job.hazards}:
-                    hazard = db_sess.query(Hazard).get(i)
                     if hazard:
-                        job.hazards.append(hazard)
+                        job.hazards.append(db_sess.query(Hazard).get(i))
 
             db_sess.commit()
             db_sess.close()

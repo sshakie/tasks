@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
-import logging, os
+import logging, os, random
+from geocoder import get_country, get_distance, get_coordinates
 
 app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
-sessionStorage = {}
 
 
 @app.route('/post', methods=['POST'])
@@ -21,42 +21,28 @@ def main():
 
 
 def processing_dialog(req, res):
-    user_id = req['session']['user_id']
-
     if req['session']['new']:
-        sessionStorage[user_id] = {'suggests': ["Не хочу.", "Не буду.", "Отстань!"], 'current': 'слон'}
-        res['response']['text'] = 'Привет! Купи слона!'
-        res['response']['buttons'] = get_suggests(user_id)
+        res['response'][
+            'text'] = 'Привет! Я могу показать город или сказать расстояние между городами! Только напиши название или названия.'
     else:
-        a = [i for i in req['request']['nlu']['tokens'] if i in ['ладно', 'куплю', 'покупаю', 'хорошо']]
-        if a:
-            if sessionStorage[user_id]['current'] == 'слон':
-                res['response']['text'] = 'Слона можно найти на Яндекс.Маркете! Купи еще кролика!'
-                sessionStorage[user_id]['current'] = 'кролик'
-                sessionStorage[user_id]['suggests'] = ["Не хочу.", "Не буду.", "Отстань!"]
-            else:
-                res['response']['text'] = 'Кролика можно найти на Яндекс.Маркете! Купи еще слона!'
-                sessionStorage[user_id]['current'] = 'слон'
-                sessionStorage[user_id]['suggests'] = ["Не хочу.", "Не буду.", "Отстань!"]
-            res['response']['buttons'] = get_suggests(user_id)
-        else:
+        city = get_city(req)
+        if not city:
+            res['response']['text'] = 'Ты не написал название ни одного города!'
+        elif len(city) == 1:
+            res['response']['text'] = f'Этот городе в стране {get_country(city[0])}.'
+        elif len(city) == 2:
             res['response'][
-                'text'] = f"Все говорят '{req['request']['original_utterance']}', а ты купи {sessionStorage[user_id]['current']}а!"
-            res['response']['buttons'] = get_suggests(user_id)
+                'text'] = f'Расстояние между городами {get_distance(get_coordinates(city[0]), get_coordinates(city[1]))}м.'
+        else:
+            res['response']['text'] = 'Слишком много городов. Я запуталась'
 
 
-def get_suggests(user_id):
-    session = sessionStorage[user_id]
-    suggests = [{'title': suggest, 'hide': True} for suggest in session['suggests'][:2]]
-    session['suggests'] = session['suggests'][1:]
-    sessionStorage[user_id] = session
-    if len(suggests) < 2:
-        suggests.append({
-            "title": "Ладно",
-            "url": f"https://market.yandex.ru/search?text={sessionStorage[user_id]['current']}",
-            "hide": True
-        })
-    return suggests
+def get_city(req):
+    cities = []
+    for i in req['request']['nlu']['entities']:
+        if i['type'] == 'YANDEX.GEO' and 'city' in i['value']:
+            cities.append(i['value']['city'])
+    return cities
 
 
 if __name__ == '__main__':
