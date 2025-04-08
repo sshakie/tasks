@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import logging, os, random
-from geocoder import get_country, get_distance, get_coordinates
+from geocoder import get_distance, get_geo_info
 
 app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -34,10 +34,10 @@ def processing_dialog(req, res):
                 res['response']['text'] = f'{sessionStorage[user_id]['name']}, ты не написал название ни одного города!'
             elif len(city) == 1:
                 res['response'][
-                    'text'] = f'{sessionStorage[user_id]['name']}, этот городе в стране {get_country(city[0])}.'
+                    'text'] = f'{sessionStorage[user_id]['name']}, этот городе в стране {get_geo_info(city[0], 'country')}.'
             elif len(city) == 2:
                 res['response'][
-                    'text'] = f'{sessionStorage[user_id]['name']}, расстояние между городами {get_distance(get_coordinates(city[0]), get_coordinates(city[1]))}м.'
+                    'text'] = f'{sessionStorage[user_id]['name']}, расстояние между городами {round(get_distance(get_geo_info(city[0], 'coordinates'), get_geo_info(city[1], 'coordinates')))}м.'
             else:
                 res['response']['text'] = f'{sessionStorage[user_id]['name']}, слишком много городов. Я запуталась'
         else:
