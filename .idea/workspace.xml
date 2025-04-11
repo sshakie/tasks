@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="did alice task">
-      <change afterPath="$PROJECT_DIR$/8 Alice/aa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/берлин.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/благовещенск.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/дамаск.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/дубай.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/кейптаун.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/лиссобон.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/мехико.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/оймякон.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/саратов.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/сыктывкар.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/токио.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/шанхай.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/cities/юар.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/main2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/main3.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="FIXED alice task (2)">
+      <change afterPath="$PROJECT_DIR$/8 Alice/main5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/cities/moskva_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/cities/moskva_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/cities/new_york_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/cities/new_york_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/cities/paris_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/cities/paris_2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 Alice/geocoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 Alice/geocoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 Alice/aa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 Alice/main2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 Alice/main4.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +26,11 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="569a6d1bebb37c406ca7994b5861fd0ef6f6d6ca" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -70,29 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.2.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.api_users.executor": "Run",
-    "Python.db_session.executor": "Run",
-    "Python.e4wt.executor": "Run",
-    "Python.h-h-hiii...executor": "Run",
-    "Python.jobs.executor": "Run",
-    "Python.main [zBJQRc].executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main2.executor": "Run",
-    "Python.nado sosdat.executor": "Run",
-    "Python.rest-api.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.users.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/deploy"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_session.executor&quot;: &quot;Run&quot;,
+    &quot;Python.e4wt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.h-h-hiii...executor&quot;: &quot;Run&quot;,
+    &quot;Python.jobs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main [zBJQRc].executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nado sosdat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rest-api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.users.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2024.3.1.1/deploy&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
@@ -277,8 +263,39 @@
       <option name="project" value="LOCAL" />
       <updated>1744126706395</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="FIXED alice task (2)">
+      <option name="closed" value="true" />
+      <created>1744141588824</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1744141588824</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="did edit job" />
@@ -300,6 +317,7 @@
     <MESSAGE value="fixed some tasks" />
     <MESSAGE value="fixed some moments" />
     <MESSAGE value="did alice task" />
-    <option name="LAST_COMMIT_MESSAGE" value="did alice task" />
+    <MESSAGE value="FIXED alice task (2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIXED alice task (2)" />
   </component>
 </project>
