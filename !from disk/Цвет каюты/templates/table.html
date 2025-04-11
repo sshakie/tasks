@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <meta charset="utf-8">
+    <h2 align="center">Оформление каюты</h2>
+    <table class="table table-striped">
+        <thead style="background-color: #E5E5E5">
+            <tr>
+                <th>Цвет стен</th>
+                <th>Эмблема</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% if age < 21 %}
+                    {% if pol == "female" %}
+                        <td style="background-color: #FFA07A"></td>
+                    {% else %}
+                        <td style="background-color: #B0C4DE"></td>
+                    {% endif %}
+                    <td> <img src="/static/img/small.png" alt="no image"> </td>
+                {% else %}
+                    {% if pol == "female" %}
+                            <td style="background-color: #FF4500"></td>
+                        {% else %}
+                            <td style="background-color: #007FF0"></td>
+                        {% endif %}
+                    <td> <img src="/static/img/big.png" alt="no image"> </td>
+                {% endif %}
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
