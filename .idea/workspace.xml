@@ -4,35 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="doing telegram bot [2/..]">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tasks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/core.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/menu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/soundcloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sshakie.linktree/sshakie.linktree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/assets/index-07viUXHk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/assets/index-DOJnRCrw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-click.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-click.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-sel.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-sel.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-typing.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-typing.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/cursor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/cursor_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/latest-release.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/logo-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/zeromandia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/models/bridge-lite.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/templates/index.html" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="forgot wallpapers">
+      <change afterPath="$PROJECT_DIR$/sshakie.linktree/snd/qq.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sshakie.linktree/img/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sshakie.linktree/sshakie.linktree.py" beforeDir="false" afterPath="$PROJECT_DIR$/sshakie.linktree/sshakie.linktree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,32 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.2.executor": "Run",
-    "Python.^^catchh-up.taak-bezchelovechno.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.api_users.executor": "Run",
-    "Python.db_session.executor": "Run",
-    "Python.e4wt.executor": "Run",
-    "Python.h-h-hiii...executor": "Run",
-    "Python.jobs.executor": "Run",
-    "Python.main [zBJQRc].executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main2.executor": "Run",
-    "Python.nado sosdat.executor": "Run",
-    "Python.rest-api.executor": "Run",
-    "Python.sshakie.linktree.executor": "Run",
-    "Python.task.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.users.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks/sshakie.linktree/img"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.^^catchh-up.taak-bezchelovechno.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_session.executor&quot;: &quot;Run&quot;,
+    &quot;Python.e4wt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.h-h-hiii...executor&quot;: &quot;Run&quot;,
+    &quot;Python.jobs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main [zBJQRc].executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nado sosdat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rest-api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sshakie.linktree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.users.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2024.3.1.1/tasks/sshakie.linktree/img&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
@@ -115,10 +91,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\snd" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\10 TG-bot" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\zeromandia.github.io-pages\static" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\zeromandia.github.io-pages" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -321,7 +297,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744405930949</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="did for myself *linktree*">
+      <option name="closed" value="true" />
+      <created>1744418716868</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1744418716868</updated>
+    </task>
+    <task id="LOCAL-00025" summary="forgot wallpapers">
+      <option name="closed" value="true" />
+      <created>1744418905857</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1744418905857</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,6 +363,8 @@
     <MESSAGE value="backup" />
     <MESSAGE value="doing telegram bot [1/..]" />
     <MESSAGE value="doing telegram bot [2/..]" />
-    <option name="LAST_COMMIT_MESSAGE" value="doing telegram bot [2/..]" />
+    <MESSAGE value="did for myself *linktree*" />
+    <MESSAGE value="forgot wallpapers" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot wallpapers" />
   </component>
 </project>

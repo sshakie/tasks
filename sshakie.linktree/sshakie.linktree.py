@@ -6,8 +6,13 @@ menu_markup = ReplyKeyboardMarkup(menu_buttons, resize_keyboard=True, one_time_k
 
 
 async def starting(update, context):
-    with open('img/menu.jpg', 'rb') as photo:
-        await update.message.reply_photo(photo=photo, caption='**попробуй**', reply_markup=menu_markup)
+    with open('img/menu.mp4', 'rb') as video:
+        await update.message.reply_animation(
+            caption='ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ**попробуй**\nㅤㅤㅤㅤㅤㅤㅤㅤㅤ<i>self</i>.<b>sshakie^*.linktree()—</b>:\n'
+                    'ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<code>17 y.o。</code> &lt;==&gt; ᵇᵉᶻᵈᵃʳʳʳʳ...♭<b>♯</b>\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ[<u>links</u>]:',
+            animation=video, parse_mode='HTML', reply_markup=menu_markup)
+    with open('snd/qq.flac', 'rb') as audio:
+        await update.message.reply_audio(audio=audio, title='ᑫᑫ')
 
 
 async def message(update, context):
