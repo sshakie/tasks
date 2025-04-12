@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="doing telegram bot [2/..]">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tasks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/core.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/menu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sshakie.linktree/img/soundcloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sshakie.linktree/sshakie.linktree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/assets/index-07viUXHk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/assets/index-DOJnRCrw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/music.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-click.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-click.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-sel.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-sel.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-typing.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/audio/sfx-typing.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/cursor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/cursor_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/latest-release.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/logo-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/img/zeromandia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/static/models/bridge-lite.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zeromandia.github.io-pages/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="569a6d1bebb37c406ca7994b5861fd0ef6f6d6ca" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sshakie&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sshakie/tasks&quot;,
+    &quot;accountId&quot;: &quot;f4683a14-7998-4df6-9d11-e896637b8e46&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2uczbfCeKSQ4Oh8tjBBHf34hti2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.2.executor": "Run",
+    "Python.^^catchh-up.taak-bezchelovechno.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.api_users.executor": "Run",
+    "Python.db_session.executor": "Run",
+    "Python.e4wt.executor": "Run",
+    "Python.h-h-hiii...executor": "Run",
+    "Python.jobs.executor": "Run",
+    "Python.main [zBJQRc].executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
+    "Python.nado sosdat.executor": "Run",
+    "Python.rest-api.executor": "Run",
+    "Python.sshakie.linktree.executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.users.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/file/PyCharm Community Edition 2024.3.1.1/tasks/sshakie.linktree/img"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy\templates" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\10 TG-bot" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\zeromandia.github.io-pages\static" />
+      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\zeromandia.github.io-pages" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="" />
+      <created>1742562723042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742562723042</updated>
+    </task>
+    <task id="LOCAL-00001" summary="did edit job">
+      <option name="closed" value="true" />
+      <created>1742573132140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742573132140</updated>
+    </task>
+    <task id="LOCAL-00002" summary="did delete job">
+      <option name="closed" value="true" />
+      <created>1742573966844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742573966844</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed 3. job's log">
+      <option name="closed" value="true" />
+      <created>1743251781829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743251781829</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed 3. job's log (2)">
+      <option name="closed" value="true" />
+      <created>1743251912985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743251912985</updated>
+    </task>
+    <task id="LOCAL-00005" summary="did 5. Registration Form and fixed job's log">
+      <option name="closed" value="true" />
+      <created>1743256857375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743256857375</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed task">
+      <option name="closed" value="true" />
+      <created>1743258419082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743258419082</updated>
+    </task>
+    <task id="LOCAL-00007" summary="deleted old db">
+      <option name="closed" value="true" />
+      <created>1743258569458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743258569458</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed + did departaments in sqlalchemy">
+      <option name="closed" value="true" />
+      <created>1743264018956</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743264018956</updated>
+    </task>
+    <task id="LOCAL-00009" summary="finally fixed sqlalchemy">
+      <option name="closed" value="true" />
+      <created>1743265072507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743265072507</updated>
+    </task>
+    <task id="LOCAL-00010" summary="did using api (rest-api)">
+      <option name="closed" value="true" />
+      <created>1743327745228</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743327745228</updated>
+    </task>
+    <task id="LOCAL-00011" summary="did restful api [1/2 (tests)]">
+      <option name="closed" value="true" />
+      <created>1743506750323</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743506750323</updated>
+    </task>
+    <task id="LOCAL-00012" summary="did restful api [2/2]">
+      <option name="closed" value="true" />
+      <created>1743507128691</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743507128691</updated>
+    </task>
+    <task id="LOCAL-00013" summary="did put method in jobs">
+      <option name="closed" value="true" />
+      <created>1743509567486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743509567486</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed connection between db-tables">
+      <option name="closed" value="true" />
+      <created>1743767078547</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743767078547</updated>
+    </task>
+    <task id="LOCAL-00015" summary="changed imports">
+      <option name="closed" value="true" />
+      <created>1743777295005</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743777295005</updated>
+    </task>
+    <task id="LOCAL-00016" summary="did last task">
+      <option name="closed" value="true" />
+      <created>1743786064537</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743786064537</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed some tasks">
+      <option name="closed" value="true" />
+      <created>1743929745252</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743929745252</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fixed some moments">
+      <option name="closed" value="true" />
+      <created>1743930757887</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743930757887</updated>
+    </task>
+    <task id="LOCAL-00019" summary="did alice task">
+      <option name="closed" value="true" />
+      <created>1744126706395</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1744126706395</updated>
+    </task>
+    <task id="LOCAL-00020" summary="FIXED alice task (2)">
+      <option name="closed" value="true" />
+      <created>1744141588824</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1744141588824</updated>
+    </task>
+    <task id="LOCAL-00021" summary="backup">
+      <option name="closed" value="true" />
+      <created>1744394536239</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1744394536239</updated>
+    </task>
+    <task id="LOCAL-00022" summary="doing telegram bot [1/..]">
+      <option name="closed" value="true" />
+      <created>1744403006892</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1744403006892</updated>
+    </task>
+    <task id="LOCAL-00023" summary="doing telegram bot [2/..]">
+      <option name="closed" value="true" />
+      <created>1744405930949</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1744405930949</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="did edit job" />
+    <MESSAGE value="did delete job" />
+    <MESSAGE value="fixed 3. job's log" />
+    <MESSAGE value="fixed 3. job's log (2)" />
+    <MESSAGE value="did 5. Registration Form and fixed job's log" />
+    <MESSAGE value="fixed task" />
+    <MESSAGE value="deleted old db" />
+    <MESSAGE value="fixed + did departaments in sqlalchemy" />
+    <MESSAGE value="finally fixed sqlalchemy" />
+    <MESSAGE value="did using api (rest-api)" />
+    <MESSAGE value="did restful api [1/2 (tests)]" />
+    <MESSAGE value="did restful api [2/2]" />
+    <MESSAGE value="did put method in jobs" />
+    <MESSAGE value="fixed connection between db-tables" />
+    <MESSAGE value="changed imports" />
+    <MESSAGE value="did last task" />
+    <MESSAGE value="fixed some tasks" />
+    <MESSAGE value="fixed some moments" />
+    <MESSAGE value="did alice task" />
+    <MESSAGE value="FIXED alice task (2)" />
+    <MESSAGE value="backup" />
+    <MESSAGE value="doing telegram bot [1/..]" />
+    <MESSAGE value="doing telegram bot [2/..]" />
+    <option name="LAST_COMMIT_MESSAGE" value="doing telegram bot [2/..]" />
+  </component>
+</project>
