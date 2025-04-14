@@ -24,17 +24,21 @@ def give_job(job_id):
 @blueprint.route('/api/jobs', methods=['POST'])
 def create_job():
     if len([i for i in request.json.keys() if
-            i not in ['job', 'work_size', 'collaborators', 'is_finished', 'end_date']]) != 0:
+            i not in ['job', 'team_leader', 'work_size', 'collaborators', 'is_finished', 'start_date',
+                      'end_date']]) != 0:
         return make_response(jsonify({'error': 'Unknown parameter(s)'}), 400)
     if not request.json:
         return make_response(jsonify({'error': 'Empty request'}), 400)
-    elif not all(key in request.json for key in ['job', 'work_size', 'collaborators']):
+    elif not all(key in request.json for key in ['job', 'team_leader', 'work_size', 'collaborators']):
         return make_response(jsonify({'error': 'Bad request'}), 400)
     db_sess = create_session()
     jobs = Jobs()
     jobs.job = request.json['job']
+    jobs.team_leader = request.json['team_leader']
     jobs.work_size = request.json['work_size']
     jobs.collaborators = request.json['collaborators']
+    if 'start_date' in request.json.keys():
+        jobs.start_date = request.json['start_date']
     if 'end_date' in request.json.keys():
         jobs.end_date = request.json['end_date']
     if 'is_finished' in request.json.keys():
@@ -64,7 +68,8 @@ def edit_job(job_id):
         return make_response(jsonify({'error': 'Not found in db'}), 404)
 
     if len([i for i in request.json.keys() if
-            i not in ['job', 'work_size', 'collaborators', 'is_finished', 'end_date']]) != 0:
+            i not in ['job', 'team_leader', 'work_size', 'collaborators', 'is_finished', 'start_date',
+                      'end_date']]) != 0:
         return make_response(jsonify({'error': 'Unknown parameter(s)'}), 400)
     if not request.json:
         return make_response(jsonify({'error': 'Empty request'}), 400)
@@ -72,10 +77,14 @@ def edit_job(job_id):
     for i in request.json.keys():
         if i == 'job':
             jobs.job = request.json['job']
+        if i == 'team_leader':
+            jobs.team_leader = request.json['team_leader']
         if i == 'work_size':
             jobs.job = request.json['work_size']
         if i == 'collaborators':
             jobs.job = request.json['collaborators']
+        if i == 'start_date':
+            jobs.job = request.json['start_date']
         if i == 'end_date':
             jobs.job = request.json['end_date']
         if i == 'is_finished':
