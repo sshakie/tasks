@@ -51,4 +51,7 @@ def bad_request(_):
 
 if __name__ == '__main__':
     app.run()
-    os.remove('data/out.png')
+    try:
+        os.remove('data/out.png')
+    except Exception:
+        pass

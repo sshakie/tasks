@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="added team_leader and start_date to jobs api in rest api copy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/test.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed test in rest api copy">
+      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744642071131</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed test in rest api copy">
+      <option name="closed" value="true" />
+      <created>1744642192775</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1744642192775</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,7 +361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed 3. job's log" />
     <MESSAGE value="fixed 3. job's log (2)" />
     <MESSAGE value="did 5. Registration Form and fixed job's log" />
     <MESSAGE value="fixed task" />
@@ -379,6 +385,7 @@
     <MESSAGE value="forgot wallpapers" />
     <MESSAGE value="did linktree finally" />
     <MESSAGE value="added team_leader and start_date to jobs api in rest api copy" />
-    <option name="LAST_COMMIT_MESSAGE" value="added team_leader and start_date to jobs api in rest api copy" />
+    <MESSAGE value="fixed test in rest api copy" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed test in rest api copy" />
   </component>
 </project>
