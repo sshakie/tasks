@@ -34,6 +34,10 @@ class UsersListResource(Resource):
         args = user_parser.parse_args()
         session = create_session()
         user = User(surname=args['surname'],
+                    age=args['age'],
+                    position=args['position'],
+                    speciality=args['speciality'],
+                    address=args['address'],
                     name=args['name'],
                     email=args['email'])
         user.set_password(args['password'])
