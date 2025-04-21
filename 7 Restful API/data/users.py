@@ -18,6 +18,8 @@ class User(SqlAlchemyBase, SerializerMixin):
     hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     created_date = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.now)
 
+    jobs = orm.relationship('Jobs', back_populates='leader')
+
     def __repr__(self):
         return f'<User> {self.id} {self.name} {self.email}'
 
