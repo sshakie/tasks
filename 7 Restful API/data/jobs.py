@@ -13,3 +13,5 @@ class Job(SqlAlchemyBase, SerializerMixin):
     collaborators = sqlalchemy.Column(sqlalchemy.String)
     start_date = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.now)
     is_finished = sqlalchemy.Column(sqlalchemy.Boolean, default=False)
+
+    leader = sqlalchemy.orm.relationship('User')
