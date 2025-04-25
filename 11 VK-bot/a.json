@@ -1,0 +1,65 @@
+{
+  'inner_type': 'wall_wallpost',
+  'can_edit': 1,
+  'can_delete': 1,
+  'can_pin': 1,
+  'best_friends_only': 1,
+  'comments': {
+    'can_post': 1,
+    'can_close': 1,
+    'count': 0,
+    'groups_can_post': True
+  },
+  'marked_as_ads': 0,
+  'zoom_text': True,
+  'hash': 'jBq6cSogy1RqryH2Wrf-30JDY_-w',
+  'type': 'post',
+  'attachments': [],
+  'can_archive': True,
+  'date': 1745586920,
+  'from_id': 383153294,
+  'id': 327,
+  'is_archived': False,
+  'is_favorite': False,
+  'likes': {
+    'can_like': 1,
+    'count': 0,
+    'user_likes': 0,
+    'can_publish': 0,
+    'repost_disabled': False
+  },
+  'owner_id': 383153294,
+  'post_source': {
+    'type': 'api'
+  },
+  'post_type': 'post',
+  'reposts': {
+    'count': 0,
+    'wall_count': 0,
+    'mail_count': 0,
+    'user_reposted': 0
+  },
+  'text': '1'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

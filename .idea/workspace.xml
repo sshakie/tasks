@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed test in rest api copy">
-      <change beforePath="$PROJECT_DIR$/!from disk/Загрузка файла/h-h-hiii...py" beforeDir="false" afterPath="$PROJECT_DIR$/!from disk/Загрузка файла/h-h-hiii...py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tasks.iml" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed task">
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/static/img/Picture1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/static/img/Picture2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/static/img/Picture3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -61,52 +62,52 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.^^catchh-up.taak-bezchelovechno.executor&quot;: &quot;Run&quot;,
-    &quot;Python.a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python.db_session.executor&quot;: &quot;Run&quot;,
-    &quot;Python.e4wt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.h-h-hiii...executor&quot;: &quot;Run&quot;,
-    &quot;Python.jobs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main [zBJQRc].executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.nado sosdat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rest-api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sshakie.linktree.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.users.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2024.3.1.1/tasks/sshakie.linktree/img&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.2.executor": "Run",
+    "Python.^^catchh-up.taak-bezchelovechno.executor": "Run",
+    "Python.a.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.api_users.executor": "Run",
+    "Python.db_session.executor": "Run",
+    "Python.e4wt.executor": "Run",
+    "Python.h-h-hiii...executor": "Run",
+    "Python.jobs.executor": "Run",
+    "Python.main [zBJQRc].executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
+    "Python.nado sosdat.executor": "Run",
+    "Python.rest-api.executor": "Run",
+    "Python.sshakie.linktree.executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.users.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/file/PyCharm Community Edition 2025.1/PycharmProjects/tasks/11 VK-bot/static/img"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\static\img" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\6. Rest-API copy\templates" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\static\img" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\!from disk\Загрузка файла\static" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\snd" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\10 TG-bot" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -349,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744642192775</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fixed task">
+      <option name="closed" value="true" />
+      <created>1745584164320</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1745584164320</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,7 +387,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed 3. job's log (2)" />
     <MESSAGE value="did 5. Registration Form and fixed job's log" />
-    <MESSAGE value="fixed task" />
     <MESSAGE value="deleted old db" />
     <MESSAGE value="fixed + did departaments in sqlalchemy" />
     <MESSAGE value="finally fixed sqlalchemy" />
@@ -401,6 +409,7 @@
     <MESSAGE value="did linktree finally" />
     <MESSAGE value="added team_leader and start_date to jobs api in rest api copy" />
     <MESSAGE value="fixed test in rest api copy" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed test in rest api copy" />
+    <MESSAGE value="fixed task" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed task" />
   </component>
 </project>
