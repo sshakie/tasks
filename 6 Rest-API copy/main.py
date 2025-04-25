@@ -1,5 +1,5 @@
-from flask import Flask, render_template, redirect, make_response, jsonify
-from flask_login import LoginManager, logout_user, current_user
+from flask import Flask, redirect, make_response, jsonify
+from flask_login import LoginManager, logout_user
 from data.db_session import create_session, global_init
 import api.api_jobs, api.api_users
 from data.users import User

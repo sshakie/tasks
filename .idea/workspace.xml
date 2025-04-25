@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed test in rest api copy">
+      <change beforePath="$PROJECT_DIR$/!from disk/Загрузка файла/h-h-hiii...py" beforeDir="false" afterPath="$PROJECT_DIR$/!from disk/Загрузка файла/h-h-hiii...py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tasks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6 Rest-API copy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +28,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="569a6d1bebb37c406ca7994b5861fd0ef6f6d6ca" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,12 +41,15 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sshakie/tasks&quot;,
-    &quot;accountId&quot;: &quot;f4683a14-7998-4df6-9d11-e896637b8e46&quot;
+    &quot;url&quot;: &quot;https://github.com/sshakie/tasks.git&quot;,
+    &quot;accountId&quot;: &quot;ff1ea574-e6da-4ce4-a168-58e1ae3a7879&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2uczbfCeKSQ4Oh8tjBBHf34hti2" />
   <component name="ProjectLevelVcsManager">
@@ -50,13 +57,16 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.2.executor&quot;: &quot;Run&quot;,
     &quot;Python.^^catchh-up.taak-bezchelovechno.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a.executor&quot;: &quot;Run&quot;,
     &quot;Python.api.executor&quot;: &quot;Run&quot;,
     &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
     &quot;Python.db_session.executor&quot;: &quot;Run&quot;,
@@ -76,6 +86,11 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2024.3.1.1/tasks/sshakie.linktree/img&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -87,17 +102,17 @@
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\!from disk\Загрузка файла\static" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\snd" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\10 TG-bot" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\zeromandia.github.io-pages\static" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
       </set>
     </attachedChunks>
   </component>
