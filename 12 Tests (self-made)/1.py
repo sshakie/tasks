@@ -1,8 +1,13 @@
 def is_prime(n):
-    if n <= 1 or not isinstance(n, int):
+    if not n.isdigit():
         return False
-    for divisor in range(2, int(n ** 0.5)):
-        if n % divisor == 0:
+    num = int(n)
+    if num <= 1:
+        return False
+    if num == 2:
+        return True
+    for divisor in range(2, int(num ** 0.5) + 1):
+        if num % divisor == 0:
             return False
     return True
 

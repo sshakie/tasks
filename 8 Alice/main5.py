@@ -6,9 +6,9 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 sessionStorage = {}
 
-cities = {'токио': ['1', '2'],
-          'благовещенск': ['3', '4'],
-          'дубай': ['5', '6']}
+cities = {'токио': ['1656841/1c356589b00121bcd820', '1030494/acaaa1bbe49253e632e6'],
+          'благовещенск': ['213044/295c0fda4fc0a9b3ffce', '1656841/f1feab3c3082756fa9db'],
+          'берлин': ['1030494/229dc107152913a49551', '213044/33a99ec8ac99ce75f9fc']}
 
 
 @app.route('/post', methods=['POST'])
@@ -68,7 +68,7 @@ def handle_dialog(res, req):
         else:
             if sessionStorage[user_id].get('guess_country'):
                 city = sessionStorage[user_id]['city']
-                if get_country(req) == get_geo_info(city, 'country'):
+                if get_country(req) == get_geo_info(city, 'country').lower():
                     res['response']['text'] = 'Правильно! Сыграем еще?'
                     sessionStorage[user_id]['guessed_cities'].append(city)
                     sessionStorage[user_id]['go'] = False

@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed task">
-      <change afterPath="$PROJECT_DIR$/7 Restful API/test.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="added db">
+      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/given/task2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/given/task3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 Alice/1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/data/jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/data/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/db/table.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12 Tests (self-made)/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 Tests (self-made)/1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2025.1/PycharmProjects/tasks/11 VK-bot",
+    "last_opened_file_path": "D:/file/PyCharm Community Edition 2025.1/PycharmProjects/tasks/8 Alice",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
   "keyToStringList": {
@@ -109,11 +107,11 @@
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\12 Tests (self-made)\given" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\10 TG-bot\1" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\1" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\templates" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\static" />
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\static\img" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -380,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746649949355</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fixed restful api">
+      <option name="closed" value="true" />
+      <created>1746650802978</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1746650802978</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added db">
+      <option name="closed" value="true" />
+      <created>1746650825064</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1746650825064</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -407,8 +421,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="did 5. Registration Form and fixed job's log" />
-    <MESSAGE value="deleted old db" />
     <MESSAGE value="fixed + did departaments in sqlalchemy" />
     <MESSAGE value="finally fixed sqlalchemy" />
     <MESSAGE value="did using api (rest-api)" />
@@ -432,6 +444,8 @@
     <MESSAGE value="fixed test in rest api copy" />
     <MESSAGE value="addded vkjjjj" />
     <MESSAGE value="fixed task" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed task" />
+    <MESSAGE value="fixed restful api" />
+    <MESSAGE value="added db" />
+    <option name="LAST_COMMIT_MESSAGE" value="added db" />
   </component>
 </project>
