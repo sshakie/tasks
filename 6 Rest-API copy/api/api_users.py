@@ -92,8 +92,7 @@ def show_users(id):
         f'https://geocode-maps.yandex.ru/1.x/?apikey=62621221-4d79-48d0-83e1-f7b8aa92eca3&geocode={user.city_from}&lang=ru_RU&format=json')
     ll = info.json()['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos'].replace(' ',
                                                                                                                  ',')
-    time.sleep(2)  # похоже меня яндекс карты блокирует здесь, просто на всякий случай поставлю это сюда
-    req = requests.get(f'https://static-maps.yandex.ru/1.x/apikey=03ed6b30-9245-4897-8428-d44545081a7c&ll={ll}&z=10')
-    with open('data/out.png', 'wb+') as file:
+    req = requests.get(f'https://static-maps.yandex.ru/v1?apikey=f3a0fe3a-b07e-4840-a1da-06f18b2ddf13&ll={ll}&z=10')
+    with open('static/out.png', 'wb+') as file:
         file.write(req.content)
     return render_template('users_show.html', user=user)

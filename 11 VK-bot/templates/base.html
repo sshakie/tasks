@@ -1,0 +1,46 @@
+<head>
+    <title>Vk Statistics</title>
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vk.com Statistics</h1>
+    
+    <h3> {{i.period_from}} - {{i.period_to}} </h3>
+    
+    <h3>Activities</h3>
+    {% for i in stats %}
+    <div style="align: center">
+        <div class="row">
+            <span>likes</span>
+            <span>{{i.likes}}</span>
+        </div>
+        <div class="row">
+            <span>comments</span>
+            <span>{{i.comments}}</span>
+        </div>
+        <div class="row">
+            <span>subscribed</span>
+            <span>{{i.subscribed}}</span>
+        </div>
+
+        <div class="row">{{i.reach.age}}</div>
+
+        <h3>Cities</h3>
+        <div style="columns: 2">
+            {% for ii in i.reach.cities %}
+            <div class="row">
+                <span>{{ ii.name }}:</span>
+                <span>{{ ii.count }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</body>
