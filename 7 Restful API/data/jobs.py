@@ -1,7 +1,6 @@
 from data.db_session import SqlAlchemyBase
 from sqlalchemy_serializer import SerializerMixin
-import sqlalchemy
-import datetime
+import sqlalchemy, datetime
 
 
 class Job(SqlAlchemyBase, SerializerMixin):

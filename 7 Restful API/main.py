@@ -1,8 +1,6 @@
 from flask import Flask
-from flask_restful import reqparse, abort, Api
-from data.db_session import create_session, global_init
-from data.users import User
-from data.jobs import Job
+from flask_restful import Api
+from data.db_session import global_init
 from api.users_resource import UsersResource, UsersListResource
 from api.jobs_resource import JobsResource, JobsListResource
 

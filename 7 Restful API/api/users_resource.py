@@ -11,7 +11,6 @@ class UsersResource(Resource):
         abort_not_found(id, User)
         session = create_session()
         user = session.query(User).get(id)
-        session.close()
         return jsonify({'users': user.to_dict()})
 
     def delete(self, id):

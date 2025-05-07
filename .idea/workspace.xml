@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="addded vkjjjj">
-      <change afterPath="$PROJECT_DIR$/10 TG-bot/1/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10 TG-bot/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11 VK-bot/1/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11 VK-bot/1/abc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11 VK-bot/1/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11 VK-bot/1/main2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11 VK-bot/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed task">
+      <change afterPath="$PROJECT_DIR$/7 Restful API/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10 TG-bot/^^catchh-up.taak-bezchelovechno.py" beforeDir="false" afterPath="$PROJECT_DIR$/10 TG-bot/1/^^catchh-up.taak-bezchelovechno.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10 TG-bot/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/10 TG-bot/1/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10 TG-bot/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/10 TG-bot/1/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/a.json" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/api/api_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/api/api_users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6 Rest-API copy/templates/users_show.html" beforeDir="false" afterPath="$PROJECT_DIR$/6 Rest-API copy/templates/users_show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/jobs_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/api/users_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/data/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/data/jobs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/db/table.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/7 Restful API/utility/parsers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745590584752</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fixed task">
+      <option name="closed" value="true" />
+      <created>1746649949355</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1746649949355</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,8 +430,8 @@
     <MESSAGE value="did linktree finally" />
     <MESSAGE value="added team_leader and start_date to jobs api in rest api copy" />
     <MESSAGE value="fixed test in rest api copy" />
-    <MESSAGE value="fixed task" />
     <MESSAGE value="addded vkjjjj" />
-    <option name="LAST_COMMIT_MESSAGE" value="addded vkjjjj" />
+    <MESSAGE value="fixed task" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed task" />
   </component>
 </project>

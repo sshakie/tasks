@@ -11,7 +11,6 @@ class JobsResource(Resource):
         abort_not_found(id, Job)
         session = create_session()
         job = session.query(Job).get(id)
-        session.close()
         return jsonify({'jobs': job.to_dict()})
 
     def delete(self, id):
