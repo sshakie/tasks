@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="added db">
-      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/given/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/given/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/1.py" afterDir="false" />
+    <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed guess city">
+      <change afterPath="$PROJECT_DIR$/10 TG-bot/1/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/given/0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8 Alice/12.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12 Tests (self-made)/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 Tests (self-made)/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10 TG-bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/10 TG-bot/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11 VK-bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/main3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11 VK-bot/static/img/Picture1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/static/img/Picture1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11 VK-bot/static/img/Picture2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/static/img/Picture2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11 VK-bot/static/img/Picture3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/static/img/Picture3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11 VK-bot/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12 Tests (self-made)/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 Tests (self-made)/3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,61 +67,61 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.1.executor": "Run",
-    "Python.2.executor": "Run",
-    "Python.^^catchh-up.taak-bezchelovechno.executor": "Run",
-    "Python.a.executor": "Run",
-    "Python.abc.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.api_users.executor": "Run",
-    "Python.db_session.executor": "Run",
-    "Python.e4wt.executor": "Run",
-    "Python.h-h-hiii...executor": "Run",
-    "Python.jobs.executor": "Run",
-    "Python.main [zBJQRc].executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main2.executor": "Run",
-    "Python.nado sosdat.executor": "Run",
-    "Python.rest-api.executor": "Run",
-    "Python.sshakie.linktree.executor": "Run",
-    "Python.task.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.users.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/file/PyCharm Community Edition 2025.1/PycharmProjects/tasks/8 Alice",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.^^catchh-up.taak-bezchelovechno.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.abc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_session.executor&quot;: &quot;Run&quot;,
+    &quot;Python.e4wt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.h-h-hiii...executor&quot;: &quot;Run&quot;,
+    &quot;Python.jobs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main [zBJQRc].executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nado sosdat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rest-api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sshakie.linktree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.users.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/file/PyCharm Community Edition 2025.1/PycharmProjects/tasks/8 Alice&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\8 Alice" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\static\img" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\sshakie.linktree\img" />
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
-      <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\tasks\7 Restful API" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\12 Tests (self-made)\given" />
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\10 TG-bot\1" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\1" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\10 TG-bot\1" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\12 Tests (self-made)\given" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\templates" />
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\static" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
+        <option value="bundled-python-sdk-2ee2454479a3-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.122" />
       </set>
     </attachedChunks>
   </component>
@@ -394,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746650825064</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixed guess city">
+      <option name="closed" value="true" />
+      <created>1746654767280</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1746654767280</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed + did departaments in sqlalchemy" />
     <MESSAGE value="finally fixed sqlalchemy" />
     <MESSAGE value="did using api (rest-api)" />
     <MESSAGE value="did restful api [1/2 (tests)]" />
@@ -446,6 +457,7 @@
     <MESSAGE value="fixed task" />
     <MESSAGE value="fixed restful api" />
     <MESSAGE value="added db" />
-    <option name="LAST_COMMIT_MESSAGE" value="added db" />
+    <MESSAGE value="fixed guess city" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed guess city" />
   </component>
 </project>

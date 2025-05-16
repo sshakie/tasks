@@ -6,9 +6,9 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 sessionStorage = {}
 
-cities = {'токио': ['1656841/1c356589b00121bcd820', '1030494/acaaa1bbe49253e632e6'],
-          'благовещенск': ['213044/295c0fda4fc0a9b3ffce', '1656841/f1feab3c3082756fa9db'],
-          'берлин': ['1030494/229dc107152913a49551', '213044/33a99ec8ac99ce75f9fc']}
+cities = {'токио': ['937455/5b6db1bbfeacb5be8451', '13200873/3ef7a632cd0353b71558'],
+          'благовещенск': ['13200873/0f307e14b11ea2d0b0c1', '13200873/a24aebc4452e38527807'],
+          'берлин': ['13200873/2a9bc9415ceaee6e14bc', '1521359/2827e97ed9dc782359aa']}
 
 
 @app.route('/post', methods=['POST'])
