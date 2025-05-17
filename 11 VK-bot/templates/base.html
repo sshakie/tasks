@@ -1,0 +1,68 @@
+<head>
+    <title>Vk Statistics</title>
+    <style>
+        h2 {font-size: 28px; margin-top: 40px}
+
+        table {margin: 0 auto 30px auto; border-collapse: collapse; width: 300px}
+
+        td {border: 1px solid #555; padding: 10px}
+
+        .activities td {background-color: violet}
+
+        .ages td {background-color: aquamarine}
+
+        .cities td {background-color: lightpink}
+    </style>
+</head>
+
+<body style="text-align: center">
+    <h1 style="font-size: 36px; margin-bottom: 30px">Vk.com Statistics</h1>
+
+    {% set total_likes = 0 %}
+    {% set total_comments = 0 %}
+    {% set total_subscribed = 0 %}
+    {% set age_map = {
+        '12-18': 0, '18-21': 0, '21-24': 0, '24-27': 0,
+        '27-30': 0, '30-35': 0, '35-45': 0, '45-100': 0
+    } %}
+    {% set cities = [] %}
+
+    {% for i in stats %}
+        {% set total_likes = total_likes + (i.likes or 0) %}
+        {% set total_comments = total_comments + (i.comments or 0) %}
+        {% set total_subscribed = total_subscribed + (i.subscribed or 0) %}
+
+        {% for age in i.age_distribution %}
+            {% set _ = age_map.__setitem__(age.value, age_map.get(age.value, 0) + age.count) %}
+        {% endfor %}
+
+        {% if i.cities %}
+            {% for city in i.cities %}
+                {% if city.name not in cities %}
+                    {% set _ = cities.append(city.name) %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+    <h2 style="color: purple">Activities</h2>
+    <table class="activities">
+        <tr><td>likes</td><td>{{ total_likes }}</td></tr>
+        <tr><td>comments</td><td>{{ total_comments }}</td></tr>
+        <tr><td>subscribed</td><td>{{ total_subscribed }}</td></tr>
+    </table>
+
+    <h2 style="color: teal">Ages</h2>
+    <table class="ages">
+        {% for label in ['12-18','18-21','21-24','24-27','27-30','30-35','35-45','45-100'] %}
+        <tr><td>{{ label }}</td><td>{{ age_map[label] }}</td></tr>
+        {% endfor %}
+    </table>
+
+    <h2 style="color: deeppink">Cities</h2>
+    <table class="cities">
+        {% for city in cities %}
+        <tr><td>{{ city }}</td></tr>
+        {% endfor %}
+    </table>
+</body>

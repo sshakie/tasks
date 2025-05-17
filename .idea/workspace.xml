@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8464bdf-b79f-47a8-9cd3-21d829353ef9" name="Changes" comment="fixed guess city">
-      <change afterPath="$PROJECT_DIR$/10 TG-bot/1/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12 Tests (self-made)/given/0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8 Alice/12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10 TG-bot/1/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10 TG-bot/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 VK-bot/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10 TG-bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/10 TG-bot/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/main3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/static/img/Picture1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/static/img/Picture1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/static/img/Picture2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/static/img/Picture2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/static/img/Picture3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/static/img/Picture3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 VK-bot/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/11 VK-bot/1/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12 Tests (self-made)/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/12 Tests (self-made)/3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,11 +106,11 @@
       <recent name="D:\file\PyCharm Community Edition 2024.3.1.1\deploy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot" />
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\1" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\10 TG-bot" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\10 TG-bot\1" />
-      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\12 Tests (self-made)\given" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot" />
       <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\templates" />
+      <recent name="D:\file\PyCharm Community Edition 2025.1\PycharmProjects\tasks\11 VK-bot\2" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -406,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746654767280</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fixed guess city">
+      <option name="closed" value="true" />
+      <created>1747401541935</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1747401541935</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

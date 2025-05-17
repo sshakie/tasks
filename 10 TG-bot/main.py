@@ -1,28 +1,52 @@
-from telegram.ext import Application, MessageHandler, filters
-import requests
+from telegram.ext import Application, MessageHandler, filters, CommandHandler
+import json, random
 
 
 async def echo(update, context):
     try:
-        geo = requests.get('https://geocode-maps.yandex.ru/v1',
-                           params={'apikey': '62621221-4d79-48d0-83e1-f7b8aa92eca3',
-                                   'geocode': update.message.text,
-                                   'lang': 'ru_RU',
-                                   'format': 'json'})
-        geo_pos = geo.json()['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point'][
-            'pos'].replace(' ', ',')
-        map = requests.get(f'http://static-maps.yandex.ru/1.x/?ll={geo_pos}&z=15&pt={geo_pos}&l=map')
-        await update.message.reply_photo(caption=f'{update.message.text}', photo=map.content)
-    except IndexError:
-        await update.message.reply_text(
-            f'Ничего не найдено, скорее всего вы ввели несуществующий адрес. (ошибка: не найдено результатов)')
-    except Exception as e:
-        await update.message.reply_text(f'Ничего не найдено, скорее всего вы ввели несуществующий адрес. (ошибка: {e})')
+        if update.message.text.lower() == context.user_data['current']['response']:
+            context.user_data['correct'] += 1
+
+        if context.user_data['left'] == 0:
+            context.user_data.pop('tests')
+            context.user_data.pop('current')
+            context.user_data.pop('left')
+            await update.message.reply_text(f'Угадано {context.user_data['correct']} questss. Хочешь ещё?')
+        else:
+            context.user_data['current'] = context.user_data['tests'].pop(
+                random.randint(1, len(context.user_data['tests']) - 1))
+            context.user_data['left'] -= 1
+            await update.message.reply_text(context.user_data['current']['question'])
+    except Exception:
+        if update.message.text == 'да':
+            await start(update, context)
+        else:
+            await update.message.reply_text(update.message.text)
+
+
+async def start(update, context):
+    with open('data.json', encoding='utf-8') as file:
+        context.user_data['tests'] = [i for i in json.load(file)['test']]
+    context.user_data['current'] = context.user_data['tests'].pop(
+        random.randint(1, len(context.user_data['tests']) - 1))
+    context.user_data['correct'] = 0
+    context.user_data['left'] = 9
+    await update.message.reply_text(context.user_data['current']['question'])
+
+
+async def stop(update, context):
+    context.user_data.pop('tests')
+    context.user_data.pop('current')
+    context.user_data.pop('correct')
+    context.user_data.pop('left')
+    await update.message.reply_text('Отмена')
 
 
 def main():
     application = Application.builder().token('7672914528:AAHrBLxcpxh5sNck-DyIDKTgVxIPI2L_kyQ').build()
-    application.add_handler(MessageHandler(filters.TEXT, echo))
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
+    application.add_handler(CommandHandler('start', start))
+    application.add_handler(CommandHandler('stop', stop))
 
     application.run_polling()
 
